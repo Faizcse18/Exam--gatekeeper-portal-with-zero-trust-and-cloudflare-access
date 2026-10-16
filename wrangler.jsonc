@@ -1,0 +1,22 @@
+{
+	"$schema": "./node_modules/wrangler/config-schema.json",
+	"name": "gatekeeper-portal",
+	"main": "src/index.js",
+	"compatibility_date": "2026-10-12",
+	"d1_databases": [
+		{
+			"binding": "DB",
+			"database_name": "gatekeeper-portal-db",
+			"database_id": "5d5f0c7a-a761-4b69-855c-de5603652193",
+			"migrations_dir": "migrations"
+		}
+	],
+	"access": {
+		"dev": {
+			"aud": "gatekeeper-portal-local",
+			"identity": {
+				"email": "faiz414.muhammad+intern@gmail.com"
+			}
+		}
+	}
+}
